@@ -1,0 +1,20 @@
+---
+Public IPv4 DNS
+ec2-18-223-129-228.us-east-2.compute.amazonaws.com
+---
+1. Retrieve an authentication token and authenticate your Docker client to your registry.
+Use the AWS CLI:
+aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 319892493673.dkr.ecr.us-east-2.amazonaws.com
+---
+Workshop2 repository URI
+319892493673.dkr.ecr.us-east-2.amazonaws.com/workshop2
+
+---
+Docker commands
+docker build -t workshop2 .
+
+docker tag workshop2:latest 319892493673.dkr.ecr.us-east-2.amazonaws.com/workshop2:latest
+
+docker build -t workshop2 .
+
+---
