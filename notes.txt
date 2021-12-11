@@ -18,3 +18,22 @@ docker tag workshop2:latest 319892493673.dkr.ecr.us-east-2.amazonaws.com/worksho
 docker build -t workshop2 .
 
 ---
+Elastic IP address of instance
+18.223.129.228
+---
+command to open EC2 instance with private key
+ssh -i <your private key filename> ubuntu@<your EC2 instance Elastic IP address>
+ssh -i nucamp-django-docker.pem ubuntu@18.223.129.228
+--
+workshop2 github URL
+https://github.com/JoyVoid/workshop2
+---
+URL to see EC2 instance 
+http://ec2-18-223-129-228.us-east-2.compute.amazonaws.com:8000
+---
+Got operational error
+changed security group SQL server rule (added for IPv4 rather than the IPv6 exisiting)
+new
+sgr-095abba2440a5a3f1	
+old
+sgr-02cbb29c751750dd2	
